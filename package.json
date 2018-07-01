@@ -1,5 +1,5 @@
 {
-  "name": "tests",
+  "name": "test-with-scss",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
