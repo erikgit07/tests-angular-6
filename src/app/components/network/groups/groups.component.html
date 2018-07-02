@@ -45,7 +45,7 @@
   </div>
   <div class="row" *ngFor="let connectionInfo of connectionInfos">
   	<div class="col-md-3 tbl-col-div">
-  		<mat-icon mat-list-icon>lens</mat-icon>
+  		<mat-icon mat-list-icon [ngStyle]="setColor(connectionInfo.color)">lens</mat-icon>
   		<span class="name-div txt-color">{{connectionInfo.name}}</span>
     </div>
     <div class="col-md-3 tbl-col-div"> 
@@ -56,7 +56,7 @@
 		</div>
 		<div class="col-md-3 tbl-col-div">
 			<span class="type-div txt-color">{{connectionInfo.type}}</span>
-			<mat-icon mat-list-icon>more_vert</mat-icon>
+			<mat-icon mat-list-icon (click)="openDialog(connectionInfo)">more_vert</mat-icon>
 		</div>
   </div>
 </section>
