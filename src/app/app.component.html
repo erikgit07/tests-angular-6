@@ -1,20 +1,96 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav mode="side" class="app-sidenav">
+    <mat-toolbar class="toolbar-back-color">
+      <span class="toolbar-filler">calero</span>
+    </mat-toolbar>
+    <mat-nav-list>
+      <mat-accordion>
+			  <mat-expansion-panel>
+			    <mat-expansion-panel-header>
+			      <mat-panel-title>
+			        <mat-icon mat-list-icon>description</mat-icon>
+			        <div class="expansion-title">
+			        	<span class="title" mat-line>Document Automation</span>
+			        </div>
+			      </mat-panel-title>
+			    </mat-expansion-panel-header>
+			    <mat-action-row>
+				    <button mat-button [routerLink]="['/documentation']" (click)="sidenav.toggle()">Documentation 1</button>
+				  </mat-action-row>
+				  <mat-action-row>
+				    <button mat-button [routerLink]="['/documentation']" (click)="sidenav.toggle()">Documentation 2</button>
+				  </mat-action-row>
+				  <mat-action-row>
+				    <button mat-button [routerLink]="['/documentation']" (click)="sidenav.toggle()">Documentation 3</button>
+				  </mat-action-row>
+			  </mat-expansion-panel>
+			</mat-accordion>
+      <a mat-list-item class="sidenav-link" [routerLink]="['/payments']" (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>local_offer</mat-icon>
+        <span class="title" mat-line>Payments</span>
+      </a>
+      <mat-accordion>
+			  <mat-expansion-panel>
+			    <mat-expansion-panel-header>
+			      <mat-panel-title>
+			        <mat-icon mat-list-icon>network_check</mat-icon>
+			        <div class="expansion-title">
+			        	<span class="title" mat-line>Network</span>
+			        </div>
+			      </mat-panel-title>
+			    </mat-expansion-panel-header>
+			    <mat-action-row>
+				    <button mat-button [routerLink]="['/internal']" (click)="sidenav.toggle()">Internal team1</button>
+				  </mat-action-row>
+				  <mat-action-row>
+				    <button mat-button [routerLink]="['/groups']" (click)="sidenav.toggle()">Group</button>
+				  </mat-action-row>
+				  <mat-action-row>
+				    <button mat-button [routerLink]="['/calero']" (click)="sidenav.toggle()">Calero Network</button>
+				  </mat-action-row>
+			  </mat-expansion-panel>
+			</mat-accordion>
+      <a mat-list-item class="sidenav-link" [routerLink]="['/fraud']" (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>zoom_in</mat-icon>
+        <span class="title" mat-line>Fraud and Risk Model</span>
+      </a>
+      <a mat-list-item class="sidenav-link" [routerLink]="['/cash']" (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>settings_overscan</mat-icon>
+        <span class="title" mat-line>Cash Flow</span>
+      </a>
+      <a mat-list-item class="sidenav-link" [routerLink]="['/time']" (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>access_time</mat-icon>
+        <span class="title" mat-line>Time Tracker</span>
+      </a>
+      <a mat-list-item class="sidenav-link" [routerLink]="['/integration']" (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>phone_iphone</mat-icon>
+        <span class="title" mat-line>App Integration</span>
+      </a>
+      <a mat-list-item class="sidenav-link" [routerLink]="['/credit']" (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>credit_card</mat-icon>
+        <span class="title" mat-line>Credit</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>	
+  <mat-toolbar id="appToolbar" color="">
+    <button mat-icon-button (click)="sidenav.toggle()" class="mat-icon-button sidenav-toggle-button">
+        <mat-icon aria-label="Menu" class="material-icons">menu</mat-icon>
+    </button>
+    <span class="toolbar-filler"></span>
+    <div class="toolbar-right-div">
+    	<div class="mat-button toolbar-icon">
+	    	<mat-icon mat-list-icon>notifications</mat-icon>
+	    </div>
+	    <div class="mat-button toolbar-icon">
+	    	<mat-icon mat-list-icon>email</mat-icon>
+	    </div>
+	    <div class="mat-button logout-btn-div">
+	    	<div class="logout-img-div">
+	    		<img mat-card-image src="../assets/logo.png" class="logo-img">
+		    </div>
+		    <mat-icon mat-list-icon>expand_more</mat-icon>
+	    </div>
+  	</div>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>

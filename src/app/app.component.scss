@@ -1,0 +1,59 @@
+.toolbar-filler {
+    flex: 1 1 auto
+}
+
+.app-sidenav {
+	background-color: rgb(230, 232, 255);
+
+	.toolbar-back-color {
+		background-color: rgb(230, 232, 255);
+		text-align: center;
+		font-size: 1.8rem;
+	}
+}
+
+.mat-expansion-panel {
+	background-color: rgb(230, 232, 255);
+	box-shadow: none !important;
+}
+
+.expansion-title {
+	padding-right: 0;
+	padding-left: 16px;
+}
+
+.mat-action-row {
+    border-top-style: none !important;
+    border-top-width: 0px;
+    padding: 0px 30px 8px 24px;
+}
+
+.logout-btn-div {
+	display: flex;
+	align-items: center;
+
+	.logout-img-div {
+		width: 4rem;
+		height: 4rem;
+
+		.logo-img {
+			border-radius: 50%;
+			width: 4rem;
+			height: 4rem;
+			margin-top: 0 !important;
+		}
+	}
+}
+
+.toolbar-right-div {
+	display: inline-flex;
+	align-items: center;
+}
+
+.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
+	min-width: 60px;
+}
+
+.toolbar-icon {
+	padding-top: 1rem;
+}

@@ -1,0 +1,64 @@
+<header></header>
+
+<section class="section-div">
+  <div class="row top-gap">
+    <div class="col-md-6">
+    	<div class="main-title-txt">Some group name</div>
+    	<div class="sub-title-txt">Created on 12th June, 2018</div>
+    </div> 
+    <div class="col-md-6 first-btns">
+    	<button mat-raised-button class="edit-btn">Edit Rules</button>
+    	<button mat-raised-button class="manage-btn">Manage Groups</button>
+    </div>
+  </div>
+  <div class="row top-gap">
+    <div class="col-md-12 main-title-txt">Group Rules</div>
+  </div>
+  <div class="row top-gap">
+    <div class="col-md-12 group-div">
+    	<div class="unit-div" *ngFor="let groupInfo of groupInfos">
+    		<span>{{groupInfo}}</span>
+    		<mat-icon mat-list-icon>close</mat-icon>
+    	</div>
+    </div> 
+  </div>
+  <div class="row top-gap">
+    <div class="col-md-12 main-title-txt">Connections</div>
+  </div>
+  <div class="row top-gap">
+  	<div class="col-md-3 tbl-col-div">
+  		<span>Name</span>
+  		<mat-icon mat-list-icon>expand_more</mat-icon>
+    </div>
+    <div class="col-md-3 tbl-col-div"> 
+    	<span>System ID</span>
+    	<mat-icon mat-list-icon>expand_more</mat-icon>
+		</div>
+		<div class="col-md-3 tbl-col-div">
+			<span>Relation</span>
+			<mat-icon mat-list-icon>expand_more</mat-icon>
+		</div>
+		<div class="col-md-3 tbl-col-div">
+			<span>Connection type</span>
+			<mat-icon mat-list-icon>expand_more</mat-icon>
+		</div>
+  </div>
+  <div class="row" *ngFor="let connectionInfo of connectionInfos">
+  	<div class="col-md-3 tbl-col-div">
+  		<mat-icon mat-list-icon>lens</mat-icon>
+  		<span class="name-div txt-color">{{connectionInfo.name}}</span>
+    </div>
+    <div class="col-md-3 tbl-col-div"> 
+    	<span class="txt-color">{{connectionInfo.id}}</span>
+		</div>
+		<div class="col-md-3 tbl-col-div">
+			<span class="txt-color">{{connectionInfo.relation}}</span>
+		</div>
+		<div class="col-md-3 tbl-col-div">
+			<span class="type-div txt-color">{{connectionInfo.type}}</span>
+			<mat-icon mat-list-icon>more_vert</mat-icon>
+		</div>
+  </div>
+</section>
+
+<footer></footer>

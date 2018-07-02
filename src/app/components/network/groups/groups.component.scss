@@ -1,0 +1,76 @@
+.section-div {
+	padding: 0 32px;
+
+	.top-gap {
+		margin-top: 1.5rem;
+	}
+
+	.main-title-txt {
+		font-size: 1.3rem;
+	}
+
+	.sub-title-txt {
+		font-size: 0.8rem;
+		color: rgb(215, 215, 219);
+	}
+
+
+	.first-btns {
+		display: flex;	
+		justify-content: end;
+
+		.edit-btn {
+			background-color: rgb(86, 61, 255);
+			color: white;
+			margin-left: 20px;
+			width: 9rem;
+			height: 2.5rem;
+		}
+
+		.manage-btn {
+			background-color: rgb(53, 229, 141);
+			color: white;
+			margin-left: 20px;
+			width: 9rem;
+			height: 2.5rem;
+		}
+	}
+
+	.group-div {
+		display: flex;
+		flex-wrap: wrap;
+
+		.unit-div {
+			display: flex;
+			border: 1px solid;
+			width: 320px;
+			justify-content: space-between;
+			padding: 4px;
+			height: 32px;
+			margin: 6px 4px;
+			border-radius: 3px;
+		}
+	}
+
+	.tbl-col-div {
+		display: flex;
+		align-items: center;
+		padding-top: 20px;
+	}
+
+	.name-div {
+		padding-left: 1rem;
+	}
+
+	.type-div {
+		width: 13rem;
+	}
+
+	.txt-color {
+		color: rgb(119, 117, 137);
+		font-size: 0.9rem;
+	}
+}
+
+
+
