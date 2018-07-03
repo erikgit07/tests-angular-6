@@ -9,16 +9,16 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { MatExpansionModule } from '@angular/material/expansion';
 
 import { AppComponent } from './app.component';
-import { PaymentsComponent } from './components/payments/payments.component';
-import { FraudComponent } from './components/fraud/fraud.component';
-import { CashComponent } from './components/cash/cash.component';
-import { TimeComponent } from './components/time/time.component';
-import { IntegrationComponent } from './components/integration/integration.component';
-import { CreditComponent } from './components/credit/credit.component';
-import { InternalComponent } from './components/network/internal/internal.component';
-import { GroupsComponent } from './components/network/groups/groups.component';
-import { CaleroComponent } from './components/network/calero/calero.component';
-import { DocumentationComponent } from './components/document/documentation/documentation.component';
+import { PaymentsComponent } from './pages/payments/payments.component';
+import { FraudComponent } from './pages/fraud/fraud.component';
+import { CashComponent } from './pages/cash/cash.component';
+import { TimeComponent } from './pages/time/time.component';
+import { IntegrationComponent } from './pages/integration/integration.component';
+import { CreditComponent } from './pages/credit/credit.component';
+import { InternalComponent } from './pages/network/internal/internal.component';
+import { GroupsComponent } from './pages/network/groups/groups.component';
+import { CaleroComponent } from './pages/network/calero/calero.component';
+import { DocumentationComponent } from './pages/document/documentation/documentation.component';
 
 const appRoutes: Routes = [
   { path: 'payments', component: PaymentsComponent},

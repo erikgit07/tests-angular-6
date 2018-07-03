@@ -46,6 +46,6 @@ export class GroupsComponent implements OnInit {
   }
 
   openDialog(connectInfo) {
-    
+    console.log(connectInfo);
   }
 }
